@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="display-3 text-center">Калькулятор визиток</h1>
+        <div class="row">
+            <div class="col-12 col-md-5">
+                <div id="calc" class="shadow-lg p-4 mt-4">
+                    <h3>Рассчёт стоимости</h3>
+                    <label for="card-quantity">Количество</label>
+                    <input type="number" id="card-quantity" value="30" min="30" step="30">
+                    <label for="card-paper">Бумага</label>
+                    <select class="form-control" id="card-paper"></select>
+                    <label for="card-color">Цветность</label>
+                    <select class="form-control" id="card-color"></select>
+                    <h4>Стоимость тиража</h4>
+                    <p class="display-4"><span id="final-price">0</span> руб.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-7">
+                <div class="text-center mt-5">
+                    <img src="./img/1_0.png" alt="" id="card-1">
+                    <img src="./img/1_1.png" alt="" id="card-2">
+                    <img src="./img/4_0.png" alt="" id="card-3">
+                    <img src="./img/4_1.png" alt="" id="card-4">
+                    <img src="./img/4_4.png" alt="" id="card-5">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
